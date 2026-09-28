@@ -705,9 +705,9 @@ AI Map Reduce over Big Data（6.6%）和 Universal Verification（6.4%）是缺�
 
 ## 14. 数据
 
-[`data/jev-ecosystem-classification.csv`](data/jev-ecosystem-classification.csv) 为每个已分类的仓库保存一行：star 数、创建日期、是否与 Jev 相关、最终的类型、类别和用例、Jev 的标签及置信度，以及最终标签的来源（`label_source`）。值 "source code verification" 标记第 7 节的 104 个大型集成：每个集成是否与 Jev 相关及其类别，都来自对其源代码的阅读。其中 101 个含有集成代码，它们的类型和用例来自 Jev 与两位盲评审阅者的多数意见，第 7 节中提到的那一处用例更正除外。另外 3 个与 Jev 无关，因此类型为 `unrelated`，用例为 `general_or_other`。值 "Jev and two blind reviewers" 标记其余所有行：这些行的所有最终标签都来自该多数意见，在三者意见均不一致时加入第三位盲评审阅者。唯一的例外是 6 个相关仓库的类型：它们的最终类型是 `unrelated`，与其相关性矛盾，因此改用 Jev 给出的类型；若 Jev 也选择了 `unrelated`，则使用 `application`。
+[`data/jev-ecosystem-classification.csv`](data/jev-ecosystem-classification.csv) 为每个已分类的仓库保存一行：仓库名称和 GitHub URL、star 数、创建日期、是否与 Jev 相关、最终的类型、类别和用例、Jev 的标签及置信度，以及最终标签的来源（`label_source`）。值 "source code verification" 标记第 7 节的 104 个大型集成：每个集成是否与 Jev 相关及其类别，都来自对其源代码的阅读。其中 101 个含有集成代码，它们的类型和用例来自 Jev 与两位盲评审阅者的多数意见，第 7 节中提到的那一处用例更正除外。另外 3 个与 Jev 无关，因此类型为 `unrelated`，用例为 `general_or_other`。值 "Jev and two blind reviewers" 标记其余所有行：这些行的所有最终标签都来自该多数意见，在三者意见均不一致时加入第三位盲评审阅者。唯一的例外是 6 个相关仓库的类型：它们的最终类型是 `unrelated`，与其相关性矛盾，因此改用 Jev 给出的类型；若 Jev 也选择了 `unrelated`，则使用 `application`。
 
-[`data/jev-integration-evidence.csv`](data/jev-integration-evidence.csv) 为验证第 7 节的集成而阅读的每个源文件保存一行：仓库、是否存在集成、集成类型、文件路径、主集成文件首次添加的日期，以及关于该日期的备注。在 104 个仓库中，有 90 个的备注写明了添加该文件的提交或发布版本。其余 14 个的备注只重复日期，因为源数据没有为它们记录提交或发布版本。
+[`data/jev-integration-evidence.csv`](data/jev-integration-evidence.csv) 为验证第 7 节的集成而阅读的每个源文件保存一行：仓库、是否存在集成、集成类型、文件路径、该证据的 URL、主集成文件首次添加的日期，以及关于该日期的备注。URL 指向默认分支上的该文件，或指向证据中提到的提交、pull request、发布版本或包页面；有 2 个文件已不在默认分支上，它们的 URL 指向添加该文件的提交。在 104 个仓库中，有 90 个的备注写明了添加该文件的提交或发布版本。其余 14 个的备注只重复日期，因为源数据没有为它们记录提交或发布版本。
 
 ## 15. 来源
 
