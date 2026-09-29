@@ -579,6 +579,8 @@ This section covers 6 sources: 5 third-party studies and the Hacker News launch 
 
 **SemIf results** (TheoLeeCJ/SemIf-OpenJev, 2026-09-18). On a selected 102-row subset of TypeSafe's public evaluation records, the published Jev answers agreed with the reference 0.883 of the time, against 0.845 for a direct readout of an open 4-billion-parameter model. The author says this does not show near-Jev capability.
 
+For a separate application-level view of the early ecosystem, [Jev in the Wild](https://arxiv.org/abs/2609.30216) surveys 2,170 public GitHub Jev projects and analyzes growth, application domains, and decision-use patterns. It is additional context, outside the six sources evaluated above.
+
 ## 10. Community lists
 
 The 14 lists below were used as sources. "Linked" counts the GitHub repositories each list links that still exist and were classified. "Related" counts those whose final label is related to Jev.
